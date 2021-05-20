@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  publicmysql:
+    image: mysql:5.7
+    restart: unless-stopped
+    container_name: mysql56-container
+    ports:
+        - "3307:3306"
+    environment:
+        MYSQL_ROOT_PASSWORD: rootPassword
+    volumes:
+        - //home/dev37/mysql-sql-5-data:/var/lib/mysql
