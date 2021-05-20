@@ -1,4 +1,4 @@
-#Use nginx as reverse proxy
+# Use nginx as reverse proxy
 
 1. Install nginx in system.
 
