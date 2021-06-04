@@ -6,7 +6,7 @@
    ```json   
    stream {
    	upstream db {
-   		server mysql-v4-testing-sl.cluster-c4m83mrwpmik.us-east-1.rds.amazonaws.com:3306;
+   		server mysql.com:3306;
    	}
    
    	server {
