@@ -1,0 +1,22 @@
+version: "3"
+services:
+  sonarqube:
+    image: sonarqube:9.8.0-community
+    volumes:
+    - sonarqube_data:/opt/sonarqube/data
+    - sonarqube_logs:/opt/sonarqube/logs
+    - sonarqube_extensions:/opt/sonarqube/extensions
+    ports:
+    - "9000:9000"
+    deploy:
+      resources:
+          limits:
+            cpus: "2"
+            memory: 8g
+          reservations:
+            cpus: "1"
+            memory: 6g
+volumes:
+  sonarqube_data:
+  sonarqube_logs:
+  sonarqube_extensions:
