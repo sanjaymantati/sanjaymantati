@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus-container
+    ports:
+        - "9090:9090"
+    volumes:
+        - D:\softwares\prometheus\prometheus.yml:/etc/prometheus/prometheus.yml

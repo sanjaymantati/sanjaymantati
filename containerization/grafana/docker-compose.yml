@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  grafana:
+    image: grafana/grafana
+    container_name: grafana-container
+    ports:
+      - "3000:3000"
+    volumes:
+      - D:\softwares\grafana\data:/var/lib/grafana
